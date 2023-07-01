@@ -9,7 +9,7 @@ import Zombie from "../zombie";
 test("testing Character error type", () => {
     expect(() => {
         const testError = new Character('Sam', 'zombi');
-    }).toThrowError('Не правильный тип персонажа');
+    }).toThrowError('Неправильный тип персонажа');
 });
 
 test("testing Character name sring", () => {
