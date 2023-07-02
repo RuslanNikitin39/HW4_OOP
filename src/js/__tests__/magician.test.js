@@ -1,7 +1,7 @@
 import Magician from "../magician";
 
 test("testing Magician class", () => {
-    const testMagician = new Magician('Gandalf', 'Magician');
+    const testMagician = new Magician('Gandalf');
     expect(testMagician).toEqual({
         name: 'Gandalf',
         type: 'Magician',

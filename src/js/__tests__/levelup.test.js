@@ -2,7 +2,7 @@ import Character  from "../character";
 import Daemon from "../daemon";
 
 test("testing Character levelUp function", () => {
-    const testDumy = new Daemon('Balrog', 'Daemon');
+    const testDumy = new Daemon('Balrog');
     testDumy.levelUp();
     expect(testDumy).toEqual({
         name: 'Balrog',
@@ -16,7 +16,7 @@ test("testing Character levelUp function", () => {
 
 test("testing dead Character levelUp function error", () => {
     expect(() => {
-        const testDummy = new Daemon('Balrog', 'Daemon');
+        const testDummy = new Daemon('Balrog');
     testDummy.health = 0;
     testDummy.levelUp();
     }).toThrowError("Нельзя повысить левел умершего")

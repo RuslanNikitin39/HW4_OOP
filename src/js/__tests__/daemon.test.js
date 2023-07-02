@@ -1,7 +1,7 @@
 import Daemon from "../daemon";
 
 test("testing Daemon class", () => {
-    const testDeamon = new Daemon('Balrog', 'Daemon');
+    const testDeamon = new Daemon('Balrog');
     expect(testDeamon).toEqual({
         name: 'Balrog',
         type: 'Daemon',

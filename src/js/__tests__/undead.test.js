@@ -1,7 +1,7 @@
 import Undead from "../undead";
 
 test("testing Undead class", () => {
-    const testUndead = new Undead('Sauron', 'Undead');
+    const testUndead = new Undead('Sauron');
     expect(testUndead).toEqual({
         name: 'Sauron',
         type: 'Undead',
